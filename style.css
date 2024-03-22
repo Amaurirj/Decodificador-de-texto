@@ -1,0 +1,157 @@
+
+/* Reset CSS */
+* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+}
+
+body {
+    background-color: rgb(81, 109, 121);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.cabecalho {
+    background-color: rgb(16, 48, 95);
+    padding: 1%;
+}
+.cabecalho_menu {
+    text-align: center;
+    color:  rgb(114, 143, 155);
+    font-size: 1.43rem;
+}
+.img-alura {
+    width: 7%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+main {
+    margin: 35px 20px;
+    display: flex;
+    justify-content: center;
+}
+.section-principal {
+    width: 50%;
+    gap: 50px;
+}
+.text-area {
+    border: 2px solid rgb(16, 48, 95);
+    border-radius: 12px;
+    width: 550px;
+    height: 300px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: black;
+}
+
+::placeholder { color: black;}
+    .text-area:focus {
+        outline: none;
+        box-shadow: 0 0 0 0;
+        border: 2px solid rgb(16, 48, 95);
+        border-radius: 12px;
+}
+.information {
+    display: flex;
+    margin-top: 7px;
+    
+}
+.restricao {
+    margin: 0px 5px;
+    color: rgb(16, 48, 95);
+}
+
+.button {
+    margin: 100px 0px 0px 80px; 
+    display: inline-block;
+    }
+.btn-encriptar {
+    border-radius: 24px;
+    padding: 10px 50px;
+    background-color: rgb(16, 48,95);
+    color: rgb(135, 162, 173);
+    border: none;
+}
+.btn-encriptar:hover {
+    background-color: rgb(79, 125, 190);
+    color: rgb(0, 0, 0);
+}
+.btn-desencriptar {
+    border-radius: 24px;
+    padding: 10px 40px;
+    background-color: rgb(16, 48,95);
+    color: rgb(135, 162, 173);
+    border: none;
+}
+.btn-desencriptar:hover {
+    background-color: rgb(79, 125, 190);
+    color: rgb(0, 0, 0);
+}
+
+.section-mensagem {
+    text-align: center;
+    gap: 50px;
+}
+
+.mensagem {
+    border-radius: 12px;
+    height: 400px;
+    width: 300px;
+    font-size: 1rem;
+    border: 2px solid rgb(16, 48, 95);
+    color:black;
+    background-color: transparent;
+}
+
+.btn-copiar {
+    margin-top: 10px;
+    padding: 08px 20px;
+    border-radius: 20px;
+    background-color: rgb(16, 48,95);
+    color: rgb(135, 162, 173);
+    border: none;
+}
+.rodape {
+    justify-content: center;
+    background-color: rgb(16, 48, 95);
+    padding: 15px;
+    margin-top: 125px;
+}
+.rodape_texto {
+    text-align: center;
+    color: rgb(135, 162, 173);
+    font-size: 1.20rem;
+}
+
+@media (max-width: 1157px) {
+    .cabecalho {
+        padding: 1%;
+    }
+    .cabecalho_menu  {
+        text-align: center;
+        font-size: 15px ;
+    }
+    .rodape {
+        padding: 5px;
+        margin-bottom: 60px;
+    }
+}
