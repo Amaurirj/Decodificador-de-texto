@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Decodificador</title>
-
-
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <div class="cabecalho">
-            <h1 class="cabecalho_menu">Challenge - T6 - ONE - ALURA</h1>
-        </div>
+      <div class="cabecalho">
+        <h1 class="cabecalho_menu">Challenge - T6 - ONE - ALURA</h1>
+      </div>
     </header>
-    <img class="img-alura" src="./assets/logoAlura.png" alt="logo alura">
-    
+    <img class="img-alura" src="./assets/logoAlura.png" alt="logo alura" />
+
+    <div class="w-8 h-10 px-2"></div>
     <main>
-        <section class="section-principal">
-            <textarea class="text-area" cols="41" rows="10" placeholder="Digite seu texto"></textarea>
-            <div class="information">
-                <img class="information-icon" src="./assets/Vector.png" alt="">
-                <h6 class="restricao">Apenas letras minúsculas e sem acento</h6>
-            </div>
-            <div class="button">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="btn-desencriptar" onclick="bntDesencriptar()">Descriptografar</button>
-            </div>
-        </section>
-        <section class="section-mensagem">
-            <textarea class="mensagem" cols="20" rows="11" placeholder="Texto ou palavra criptografada"></textarea>
-            <div class="mensagem-aviso">
-                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
-            </div>
-        </section>
+      <section class="section-principal">
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="10"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="information">
+          <img class="information-icon" src="./assets/Vector.png" alt="" />
+          <h6 class="restricao">Apenas letras minúsculas e sem acento</h6>
+        </div>
+        <div class="button">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn-desencriptar" onclick="bntDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="section-mensagem">
+        <textarea
+          class="mensagem"
+          cols="20"
+          rows="11"
+          placeholder="Texto ou palavra criptografada"
+          disabled
+        ></textarea>
+        <div class="mensagem-aviso">
+          <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+      </section>
     </main>
     <footer class="rodape">
-        <p class="rodape_texto">By Amauri</p>
+      <a href="https://github.com/Amaurirj">
+        <p class="rodape_texto">By Amauri</p></a
+      >
     </footer>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
