@@ -39,10 +39,10 @@ function criptografar(stringEncriptada) {
   return stringEncriptada;
 }
 function bntDesencriptar() {
-  if (!checkTextArea(textArea.value)) {
-    alert("Texto inválido");
-    return;
-  }
+  // if (!checkTextArea(textArea.value)) {
+  //   alert("Texto inválido");
+  //   return;
+  // }
   const textoDesencriptado = descriptografar(textArea.value); //const - uso de para indicar uma variavel constante
   mensagem.value = textoDesencriptado;
   checkTextArea();
